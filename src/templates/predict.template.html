@@ -3,19 +3,25 @@
     <img src="src/assets/images/ajax-loader.gif" width="200px" height="200px">
   </div>
 </div>
+
+
 <main>
   <section class="predict-main-sec">
     <div class="container">
+        
       <div class="section-head">
         <div class="section-title">
-          <h1>Enter the Detail of Home</h1>
+          <h1>Enter the details for House Search!</h1>
         </div>
       </div>
+        
       <div class="row">
         <div class="col-12 col-md-6">
           <div class="form-detail bg-light card">
             <div class="card-body">
+                
               <form name="PredictForm">
+                  
                 <div class="form-row">
                   <div class="form-group col-12 col-md-6">
                     <label for="latitude" class="font-weight-bold">Latitude</label>
@@ -26,6 +32,7 @@
                     <input required type="number" name="longitude" id="longitude" ng-model="PredictCtrl.detail.latitude" class="form-control" min="12" max="12" placeholder="it must be 12">
                   </div>
                 </div>
+                  
                 <div class="form-group">
                   <labelclass="font-weight-bold">Ammenties</label>
                   <br>
@@ -90,9 +97,11 @@
                 </div>
                 <button ng-disabled="PredictForm.$invalid || PredictCtrl.disableButton" type="submit" ng-click="PredictCtrl.getResult();" class="btn btn-lg bg-primary text-light">Submit Details</button>
               </form>
+                
             </div>
           </div>
         </div>
+          
         <div class="col-12 col-md-6">
           <div class="card bg-light" ng-if="PredictCtrl.rentRange">
             <div class="card-body">
@@ -100,7 +109,9 @@
             </div>
           </div>
         </div>
+          
       </div>
     </div>
+      
   </section>
 </main>
