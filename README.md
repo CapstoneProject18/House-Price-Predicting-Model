@@ -1,5 +1,5 @@
 # House-Price-Predicting-Model
-This is a Machine Learning based Data Analysis project, which deals with prediction of sales price of the houses.
+This is a Machine Learning based Data Analysis project, which deals with prediction of sales price of the houses. This project is part of the Academic Course **CAPSTONE PROJECT-2 CS 4191**
 
 
 ## Scope of the project
@@ -13,8 +13,12 @@ House perimeter, area, no of rooms and floors available in the houses with their
 * Bootstrap 4 - Front-End Component Library for responsive and interactive web page
 * AngularJS - JavaScript-based open-source front-end web application framework
 * Flask - A microframework for Python
-* Gunicorn- A Python WSGI HTTP Server for Production/Deployment use.
 * Pickle - Used to save trained models/object
 * Numpy - Multidimensioanl Mathematical Computing
 * Pandas - Data manipulation and analysis for Python
 
+## Contributers
+* Antra Tripathi
+* Asmita Kandar
+* Uddalak Bhaduri
+* Yash Sangai
