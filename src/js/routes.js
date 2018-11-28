@@ -28,8 +28,7 @@
     // Predict Page
     .state('predict', {
       url: '/predict',
-      templateUrl: 'src/templates/predict.template.html',
-      controller: 'PredictController as PredictCtrl'
+      templateUrl: 'src/templates/predict.template.html'
     })
   }
 
