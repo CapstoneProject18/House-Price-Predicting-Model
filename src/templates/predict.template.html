@@ -3,8 +3,6 @@
     <img src="src/assets/images/ajax-loader.gif" width="200px" height="200px">
   </div>
 </div>
-
-
 <main>
   <section class="predict-main-sec">
     <div class="container">
@@ -14,15 +12,20 @@
           <h1>Enter the details for House Search!</h1>
         </div>
       </div>
-        
+      <!--Map start--><label>Clicked Location Co-ordinates</label> 
+          <div id="latclicked"></div>
+          <div id="longclicked"></div>
+          <label>On Present Location Co-ordinates</label> 
+          <div id="latmoved"></div>
+          <div id="longmoved"></div>
+        <!--Map end-->        
       <div class="row">
         <div class="col-12 col-md-6">
           <div class="form-detail bg-light card">
             <div class="card-body">
-                
               <form name="PredictForm">
-                  
                 <div class="form-row">
+                  <div id="SelectMapLocation"></div>
                   <div class="form-group col-12 col-md-6">
                     <label for="latitude" class="font-weight-bold">Latitude</label>
                     <input required type="number" name="latitude" id="latitude" ng-model="PredictCtrl.detail.longitude" class="form-control" min="77" max="77" placeholder="it must be 77">
@@ -105,7 +108,34 @@
         <div class="col-12 col-md-6">
           <div class="card bg-light" ng-if="PredictCtrl.rentRange">
             <div class="card-body">
-              <h2>Expected Rent of House as per your requirements is {{ PredictCtrl.rentRange | number:0 }} in Banglore region.</h2>
+              <h2>Expected Rent of House as per your requirements is {{ PredictCtrl.rentRange | number:0 }} in Banglore region.
+              </h2>
+              <table>
+                <tr>
+                  <th>Location</th>
+                  <th>Rent</th>
+                </tr>
+                <tr>
+                  <td>Nanjamba Agrahara</td>
+                  <td>12000</td>
+                </tr>
+                <tr>
+                  <td>HAL</td>
+                  <td>11500</td>
+                </tr>
+                <tr>
+                  <td>Ayyappa Nagar</td>
+                  <td>13500</td>
+                </tr>
+                <tr>
+                  <td>Bismallah Nagar</td>
+                  <td>12000</td>
+                </tr>
+                <tr>
+                  <td>J P Nagar</td>
+                  <td>13000</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
