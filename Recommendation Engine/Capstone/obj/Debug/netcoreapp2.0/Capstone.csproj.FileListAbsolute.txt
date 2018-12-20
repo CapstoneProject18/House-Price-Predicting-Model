@@ -1,0 +1,11 @@
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\bin\Debug\netcoreapp2.0\Capstone.deps.json
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\bin\Debug\netcoreapp2.0\Capstone.runtimeconfig.json
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\bin\Debug\netcoreapp2.0\Capstone.runtimeconfig.dev.json
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\bin\Debug\netcoreapp2.0\Capstone.dll
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\bin\Debug\netcoreapp2.0\Capstone.pdb
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\obj\Debug\netcoreapp2.0\Capstone.csprojResolveAssemblyReference.cache
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\obj\Debug\netcoreapp2.0\Capstone.csproj.CoreCompileInputs.cache
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\obj\Debug\netcoreapp2.0\Capstone.AssemblyInfoInputs.cache
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\obj\Debug\netcoreapp2.0\Capstone.AssemblyInfo.cs
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\obj\Debug\netcoreapp2.0\Capstone.dll
+C:\Users\Uddal\OneDrive\Documents\Visual Studio 2017\Projects\Capstone\Capstone\obj\Debug\netcoreapp2.0\Capstone.pdb
