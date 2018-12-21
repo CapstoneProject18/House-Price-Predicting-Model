@@ -6,7 +6,6 @@ angular.module('MainApp').controller('PredictController', PredictController);
 
   PredictController.$inject = ['PredictRentService', '$window'];
   function PredictController (PredictRentService, $window) {
-
      var map;
                 var latitude = 12.9716; // YOUR LATITUDE VALUE
                 var longitude = 77.5946; // YOUR LONGITUDE VALUE
@@ -175,6 +174,54 @@ angular.module('MainApp').controller('PredictController', PredictController);
         $window.scrollTo(0, 0);
         PredictCtrl.loader = false;
         PredictCtrl.disableButton = false;
+        if (PredictCtrl.rentRange > 11000 && PredictCtrl.rentRange < 13600) {
+            document.getElementById("tb1").style.display = "block";
+            document.getElementById("tb2").style.display = "none";
+            document.getElementById("tb3").style.display = "none";
+            document.getElementById("tb4").style.display = "none";
+            document.getElementById("tb5").style.display = "none";
+            document.getElementById("tb6").style.display = "none";
+          }
+          else if (PredictCtrl.rentRange >= 17000 && PredictCtrl.rentRange < 19100) {
+            document.getElementById("tb2").style.display = "block";
+            document.getElementById("tb1").style.display = "none";
+            document.getElementById("tb3").style.display = "none";
+            document.getElementById("tb4").style.display = "none";
+            document.getElementById("tb5").style.display = "none";
+            document.getElementById("tb6").style.display = "none";
+          }
+          else if (PredictCtrl.rentRange >= 13600 && PredictCtrl.rentRange < 17000) {
+            document.getElementById("tb3").style.display = "block";
+            document.getElementById("tb2").style.display = "none";
+            document.getElementById("tb1").style.display = "none";
+            document.getElementById("tb4").style.display = "none";
+            document.getElementById("tb5").style.display = "none";
+            document.getElementById("tb6").style.display = "none";
+          }
+          else if (PredictCtrl.rentRange <= 11000) {
+            document.getElementById("tb4").style.display = "block";
+            document.getElementById("tb2").style.display = "none";
+            document.getElementById("tb3").style.display = "none";
+            document.getElementById("tb1").style.display = "none";
+            document.getElementById("tb5").style.display = "none";
+            document.getElementById("tb6").style.display = "none";
+          }
+          else if (PredictCtrl.rentRange >= 19100 && PredictCtrl.rentRange < 28100) {
+            document.getElementById("tb5").style.display = "block";
+            document.getElementById("tb2").style.display = "none";
+            document.getElementById("tb3").style.display = "none";
+            document.getElementById("tb4").style.display = "none";
+            document.getElementById("tb1").style.display = "none";
+            document.getElementById("tb6").style.display = "none";
+          }
+          else if (PredictCtrl.rentRange >= 28100) {
+            document.getElementById("tb6").style.display = "block";
+            document.getElementById("tb2").style.display = "none";
+            document.getElementById("tb3").style.display = "none";
+            document.getElementById("tb4").style.display = "none";
+            document.getElementById("tb5").style.display = "none";
+            document.getElementById("tb1").style.display = "none";
+          }
       }, function (response) {
         console.log(response.status);
         PredictCtrl.loader = false;
