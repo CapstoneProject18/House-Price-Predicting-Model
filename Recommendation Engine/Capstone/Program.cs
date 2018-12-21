@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -33,20 +33,17 @@ namespace Capstone
         public static void WriteCSV<T>(IEnumerable<T> items, string path)
         {
             Type itemType = typeof(T);
-            var props = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                                .OrderBy(p => p.Name);
+            var props = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance).OrderBy(p => p.Name);
 
             using (var writer = new StreamWriter(path))
             {
                 foreach (var item in items)
-                {
                     writer.WriteLine(string.Join(", ", props.Select(p => p.GetValue(item, null))));
-                }
             }
         }
         static void Main(string[] args)
         {
-            using (var reader = new StreamReader(@"C:\Users\Uddal\Downloads\Compressed\House-Price-Predicting-Model-master\eg.csv"))
+            using (var reader = new StreamReader(@"C:\\Users\\Uddal\\Downloads\\Compressed\\House-Price-Predicting-Model-master\\eg.csv"))
             {
                 List<Data> listA = new List<Data>();
                 while (!reader.EndOfStream)
@@ -56,7 +53,7 @@ namespace Capstone
                     listA.Add(new Data(values[0], values[1]));
                 }
                 listA = listA.DistinctBy(p=>p.x).ToList();
-                WriteCSV(listA, @"C:\Users\Uddal\Downloads\Compressed\House-Price-Predicting-Model-master\eg(1).csv");
+                WriteCSV(listA, "C:\\Users\\Uddal\\Downloads\\Compressed\\House-Price-Predicting-Model-master\\eg(1).csv");
             }
         }
     }
